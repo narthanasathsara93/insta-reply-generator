@@ -1,0 +1,16 @@
+textarea {
+  display: block;
+  margin: 4px 0 8px;
+}
+
+.card-table {
+  margin-bottom: -1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  margin-top: 1px;
+}

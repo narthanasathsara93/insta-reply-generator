@@ -1,0 +1,75 @@
+<!-- <mat-card>
+  <label for="clipboard-example-textarea">Text to be copied</label>
+  <textarea
+    id="clipboard-example-textarea"
+    cols="30"
+    rows="10"
+    [(ngModel)]="value"
+  ></textarea>
+  <button [cdkCopyToClipboard]="value">Copy to clipboard</button>
+</mat-card> -->
+
+<div class="card">
+  <div class="card-body">
+    <div class="container-cell">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Comment</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>male</td>
+            <td>
+              <textarea
+                id="clipboard-example-textarea"
+                cols="50"
+                rows="2"
+                [(ngModel)]="male_comment"
+              ></textarea>
+            </td>
+            <td>
+              <button
+                class="btn btn-success"
+                [cdkCopyToClipboard]="male_comment"
+              >
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>female</td>
+            <td>
+              <textarea
+                id="clipboard-example-textarea"
+                cols="50"
+                rows="2"
+                [(ngModel)]="female_comment"
+              ></textarea>
+            </td>
+            <td>
+              <button
+                class="btn btn-success"
+                [cdkCopyToClipboard]="female_comment"
+              >
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>
+              <button class="btn btn-warning" (click)="generateComments()">
+                Shuffle
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
